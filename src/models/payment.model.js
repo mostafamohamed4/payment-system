@@ -25,6 +25,10 @@ const paymentSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
+    gatewayTransactionId: {
+      type: String,
+      default: null,
+    },
   },
   { timestamps: true },
 );
